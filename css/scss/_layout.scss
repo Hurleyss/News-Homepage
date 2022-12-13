@@ -1,0 +1,29 @@
+.wrapper {
+    width:1114px;
+    margin:0 auto;
+    padding:0 15px;
+    @media only screen and (max-width: 1140px) {
+        width:100%;
+        padding:0 50px;
+    }
+    @media only screen and (max-width: 768px) {
+        padding:0 35px;
+    }
+    @media only screen and (max-width: 540px) {
+        padding:0 15px;
+    }
+}
+.flex {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    @media only screen and (max-width: 1140px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.gap-new {
+    gap:30px;
+    @media only screen and (max-width: 1140px) {
+        gap:45px;
+    }
+}
